@@ -66,10 +66,11 @@ $(function() {
             })
         })
         //test that checks atleast one feed exists
-        it('at least one entry in the feed', function(done) {
-            var feedEntries = $('.feed');
+        it('at least one entry in the feed', function() {
+            var feedEntries = $('.feed .entry-link');
+           // console.log('feedEntries: ', feedEntries)
             expect(feedEntries.length).toBeGreaterThan(0);
-            done();
+
         })
     })
 
